@@ -1,69 +1,132 @@
-html,body {
+html, body {
  margin: 0;
  padding: 0;
+ background-color: #000;
+ font-family: sans-serif;
 }
 
-.background{
- background:url('images/image.jpg');
- position: relative;
+.info {
+ margin: 0 20px 20px 50px;
+}
 
-}
-.layer {
- padding: 20px;
- background: rgba(39, 97, 83, 0.47);
- /*position: absolute;
- top: 0;
- left: 0;
- bottom: 0;
- right: 0;*/
-}
-h1{
+h1 {
  font-size: 45px;
- text-align: center;
- font-family: 'Raleway', sans-serif;
-}
-p{
- font-family: 'Open Sans Condensed', sans-serif;
- font-size: 20px;
- color: rgba(30, 5, 47, 1);
-}
-p:nth-of-type(1){
- float:left;
- width: 40%;
- margin: 3px;
- padding:inherit;
-}
-p:nth-of-type(2){
  float: left;
- width: 40%;
- margin: 3px;
- padding: inherit;
+ color: #fff;
+ font-family: 'Raleway';
+ margin: 160px 20px 20px 50px;
 }
-h2{
-  font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    clear:both;
-    text-align:center;
+
+p {
+ font-family: 'Open Sans Condensed';
+ font-size: 20px;
+ color: grey;
+ clear: both;
+ width: 35%;
+ margin: inherit;
 }
-li{
- font-family: 'Open Sans Condensed', sans-serif;
+
+header{
+ float: left;
+}
+li {
+ font-family: 'Open Sans Condensed';
  font-size: 25px;
  color: #FFF;
 }
-ul#horizontal-list {
-	min-width: 696px;
-	list-style: none;
-	padding-top: 20px;
-	text-align:center;
-	}
-ul#horizontal-list li{
-    display: inline;
-    margin:10px;
+
+#horizontal-list {
+ min-width: 696px;
+ list-style: none;
+ clear: both;
 }
-a{
+
+#horizontal-list li {
+ display: inline-block;
+ margin: 10px 10px 10px 0;
+}
+
+a {
  text-decoration: none;
 }
-a:hover{
+
+a:hover {
+ text-decoration: none;
  text-transform: capitalize;
- color: red;
+ color: grey;
+}
+
+img {
+ border: 2px solid white;
+}
+
+#view {
+ float: right;
+ display: block;
+ margin-top: -440px;
+margin-right: 20%;
+ padding: 0;
+}
+img{
+ max-width: 100%;
+}
+
+ul li {
+ display: block;
+ margin-bottom: 15px;
+ padding: 10px;
+}
+input, textarea {
+  max-width:100%
+}
+
+
+/* Mobile media Queries*/
+
+@media (max-width: 700px) {
+  .info, #view{
+    float: left;
+    padding: 0;
+    width: 96%;
+    margin: 2%;
+  }
+p{
+ width: 75%;
+}
+  h1{
+    margin: 1%;
+  }
+  #horizontal-list li{
+    display: block;
+  }
+  img{
+    width:
+  }
+
+}
+@media all and (max-width: 1050px) and (min-width: 701px) {
+  .info, #view{
+    float: left;
+    padding: 0;
+    width: 96%;
+    margin: 1%;
+  }
+
+  h1{
+    margin: 1%;
+  }
+  p{
+    width: 75%;
+  }
+  #view{
+    margin: 1%;
+  }
+  img{
+    margin: 2% 2% 2% 0;
+  }
+
+  ul li{
+    float: left;
+  }
+
 }
