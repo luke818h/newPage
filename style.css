@@ -3,12 +3,22 @@ html, body {
  padding: 0;
  background-color: #000;
  font-family: sans-serif;
+
 }
 
 .info {
  margin: 0 20px 20px 50px;
 }
+/* grid works */
+.container{
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+}
+.contact{
 
+}
+
+/* end of grid works */
 h1 {
  font-size: 45px;
  float: left;
