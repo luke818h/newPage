@@ -5,8 +5,63 @@ html, body {
  font-family: sans-serif;
 }
 
+a {
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: none;
+ text-transform: capitalize;
+ color: grey;
+}
+
+footer{
+ text-align: center;
+}
+
+footer p{
+ font-size: inherit;
+}
+h1 {
+ color: #fff;
+ font-family: 'Raleway';
+}
+
+img {
+ border: 2px solid white;
+ max-width: 100%;
+}
+
+li {
+ font-family: 'Open Sans Condensed';
+ font-size: 25px;
+ color: #FFF;
+}
+ol, ul{
+ padding: 0;
+}
+
+p {
+ font-family: 'Open Sans Condensed';
+ font-size: 20px;
+ color: grey;
+}
+
+ul li {
+ display: block;
+ margin-bottom: 15px;
+ padding: 0;
+}
+
 .info {
  margin: 0 0 20px 5px;
+}
+
+.intro {
+ font-family: 'Open Sans Condensed';
+ font-size: 20px;
+ color: grey;
+ width: 67%;
 }
 
 #contact{
@@ -29,10 +84,7 @@ html, body {
 #contact li{
  display: inline;
 }
-h1 {
- color: #fff;
- font-family: 'Raleway';
-}
+
 
 #banner {
  font-size: 50px;
@@ -41,107 +93,70 @@ h1 {
  margin: 160px 0 20px 0;
 }
 
-#skills{
-     display: table-caption;
-}
-#skills li{
-  font-size: 20px;
-  color: #76abb9;
-}
-.intro {
- font-family: 'Open Sans Condensed';
- font-size: 20px;
- color: grey;
- width: 67%;
-}
-
-p {
- font-family: 'Open Sans Condensed';
- font-size: 20px;
- color: grey;
-}
-
-li {
- font-family: 'Open Sans Condensed';
- font-size: 25px;
- color: #FFF;
-}
-
 #horizontal-list li {
  display: inline-block;
  margin-right: 70px;
 }
 
-a {
- text-decoration: none;
+#skills{
+     display: table-caption;
+     text-align: center;
+}
+#skills li{
+  font-size: 20px;
+  color: #76abb9;
 }
 
-a:hover {
- text-decoration: none;
- text-transform: capitalize;
- color: grey;
-}
-
-img {
- border: 2px solid white;
- max-width: 100%;
-}
-
-ul li {
- display: block;
- margin-bottom: 15px;
- padding: 0;
-}
-ol, ul{
- padding: 0;
-}
-
-footer{
- text-align: center;
-}
 /* Mobile media Queries*/
 
 @media (max-width: 700px) {
+ img {
+  width:
+ }
+ p {
+  width: 75%;
+ }
+
+ h1 {
+  margin: 1%;
+ }
  .info, #view {
   float: left;
   padding: 0;
   width: 96%;
   margin: 2%;
  }
- p {
-  width: 75%;
- }
- h1 {
-  margin: 1%;
- }
+
  #horizontal-list li {
   display: block;
- }
- img {
-  width:
  }
 }
 
 @media all and (max-width: 1050px) and (min-width: 701px) {
+ h1 {
+  margin: 1%;
+ }
+
+ img {
+  margin: 2% 2% 2% 0;
+ }
+
+ p {
+  width: 75%;
+ }
+
+ ul li {
+  float: left;
+ }
+
  .info, #view {
   float: left;
   padding: 0;
   width: 96%;
   margin: 1%;
  }
- h1 {
-  margin: 1%;
- }
- p {
-  width: 75%;
- }
+
  #view {
   margin: 1%;
- }
- img {
-  margin: 2% 2% 2% 0;
- }
- ul li {
-  float: left;
  }
 }
