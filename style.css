@@ -6,56 +6,6 @@ html, body {
 
 }
 
-.info {
- margin: 0 20px 20px 50px;
-}
-/* grid works */
-.container{
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;
-}
-.contact{
-
-}
-
-/* end of grid works */
-h1 {
- font-size: 45px;
- float: left;
- color: #fff;
- font-family: 'Raleway';
- margin: 160px 20px 20px 50px;
-}
-
-p {
- font-family: 'Open Sans Condensed';
- font-size: 20px;
- color: grey;
- clear: both;
- width: 35%;
- margin: inherit;
-}
-
-header{
- float: left;
-}
-li {
- font-family: 'Open Sans Condensed';
- font-size: 25px;
- color: #FFF;
-}
-
-#horizontal-list {
- min-width: 696px;
- list-style: none;
- clear: both;
-}
-
-#horizontal-list li {
- display: inline-block;
- margin: 10px 10px 10px 0;
-}
-
 a {
  text-decoration: none;
 }
@@ -66,77 +16,160 @@ a:hover {
  color: grey;
 }
 
-img {
- border: 2px solid white;
+footer{
+ text-align: center;
+}
+/* grid works */
+.container{
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+}
+.contact{
+
 }
 
-#view {
- float: right;
- display: block;
- margin-top: -440px;
-margin-right: 20%;
+<<<<<<< HEAD
+/* end of grid works */
+=======
+footer p{
+ font-size: inherit;
+}
+>>>>>>> grid
+h1 {
+ color: #fff;
+ font-family: 'Raleway';
+}
+
+img {
+ border: 2px solid white;
+ max-width: 100%;
+}
+
+li {
+ font-family: 'Open Sans Condensed';
+ font-size: 25px;
+ color: #FFF;
+}
+ol, ul{
  padding: 0;
 }
-img{
- max-width: 100%;
+
+p {
+ font-family: 'Open Sans Condensed';
+ font-size: 20px;
+ color: grey;
 }
 
 ul li {
  display: block;
  margin-bottom: 15px;
- padding: 10px;
-}
-input, textarea {
-  max-width:100%
+ padding: 0;
 }
 
+.info {
+ margin: 0 0 20px 5px;
+}
+
+.intro {
+ font-family: 'Open Sans Condensed';
+ font-size: 20px;
+ color: grey;
+ width: 67%;
+}
+
+#contact{
+ width: 171%;
+ margin-top: 43px;
+ display: inline-block;
+ -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+#contact h1{
+  font-size: 60px;
+}
+
+#contact  h1, ul, li{
+ display: inline-block;
+
+}
+#contact li{
+ display: inline;
+}
+
+
+#banner {
+ font-size: 50px;
+ color: #fff;
+ font-family: 'Raleway';
+ margin: 160px 0 20px 0;
+}
+
+#horizontal-list li {
+ display: inline-block;
+ margin-right: 70px;
+}
+
+#skills{
+     display: table-caption;
+     text-align: center;
+}
+#skills li{
+  font-size: 20px;
+  color: #76abb9;
+}
 
 /* Mobile media Queries*/
 
 @media (max-width: 700px) {
-  .info, #view{
-    float: left;
-    padding: 0;
-    width: 96%;
-    margin: 2%;
-  }
-p{
- width: 75%;
-}
-  h1{
-    margin: 1%;
-  }
-  #horizontal-list li{
-    display: block;
-  }
-  img{
-    width:
-  }
+ img {
+  width:
+ }
+ p {
+  width: 75%;
+ }
 
+ h1 {
+  margin: 1%;
+ }
+ .info, #view {
+  float: left;
+  padding: 0;
+  width: 96%;
+  margin: 2%;
+ }
+
+ #horizontal-list li {
+  display: block;
+ }
 }
+
 @media all and (max-width: 1050px) and (min-width: 701px) {
-  .info, #view{
-    float: left;
-    padding: 0;
-    width: 96%;
-    margin: 1%;
-  }
+ h1 {
+  margin: 1%;
+ }
 
-  h1{
-    margin: 1%;
-  }
-  p{
-    width: 75%;
-  }
-  #view{
-    margin: 1%;
-  }
-  img{
-    margin: 2% 2% 2% 0;
-  }
+ img {
+  margin: 2% 2% 2% 0;
+ }
 
-  ul li{
-    float: left;
-  }
+ p {
+  width: 75%;
+ }
 
+ ul li {
+  float: left;
+ }
+
+ .info, #view {
+  float: left;
+  padding: 0;
+  width: 96%;
+  margin: 1%;
+ }
+
+ #view {
+  margin: 1%;
+ }
 }
