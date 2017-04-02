@@ -3,7 +3,6 @@ html, body {
  padding: 0;
  background-color: #000;
  font-family: sans-serif;
-
 }
 
 a {
@@ -19,22 +18,10 @@ a:hover {
 footer{
  text-align: center;
 }
-/* grid works */
-.container{
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;
-}
-.contact{
 
-}
-
-<<<<<<< HEAD
-/* end of grid works */
-=======
 footer p{
  font-size: inherit;
 }
->>>>>>> grid
 h1 {
  color: #fff;
  font-family: 'Raleway';
@@ -113,11 +100,12 @@ ul li {
 
 #skills{
      display: table-caption;
-     text-align: center;
+  text-align: center;
 }
 #skills li{
   font-size: 20px;
   color: #76abb9;
+
 }
 
 /* Mobile media Queries*/
